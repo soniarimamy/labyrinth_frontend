@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  labyrinth_frontend:
+    build:
+      context: .
+    container_name: labyrinth_frontend
+    image: rochel/labyrinth_frontend
+    env_file: .env
+    ports:
+      - "8002:8002"
+    restart: always
