@@ -1,0 +1,28 @@
+# ignore env file
+.env
+.env.sample
+.env.dev
+.env.prod
+.env.staging
+
+# ignore .idea folder
+.idea/
+.idea
+
+# ignore env folder
+env/
+env
+.venv/
+.venv
+
+# ignore python file
+__pycache__
+
+# ignore .gitingore file
+.gitignore
+
+# ignore .dockeringore file itself
+.dockerignore
+
+# ignore player.txt file
+player.txt
