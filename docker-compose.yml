@@ -4,9 +4,17 @@ services:
   labyrinth_frontend:
     build:
       context: .
+      dockerfile: Dockerfile
     container_name: labyrinth_frontend
     image: rochel05/labyrinth_frontend
     env_file: .env
     ports:
       - "8002:8002"
     restart: always
+
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    image: rochel05/labyrinth_frontend_test
+    container_name: labyrinth_frontend_test
