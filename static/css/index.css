@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 5px;
+    margin: 20px auto;
+    width: max-content;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.wall {
+    background-color: #6c757d;
+    color: white;
+}
+
+.path {
+    background-color: #dee2e6;
+}
+
+.trap {
+    background-color: #dc3545;
+    color: white;
+}
+
+.home {
+    background-color: #198754;
+    color: white;
+}
+
+.player {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.controls button {
+    margin: 5px;
+    width: 80px;
+}
