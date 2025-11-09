@@ -5,7 +5,7 @@ services:
     build:
       context: .
     container_name: labyrinth_frontend
-    image: rochel/labyrinth_frontend
+    image: rochel05/labyrinth_frontend
     env_file: .env
     ports:
       - "8002:8002"
